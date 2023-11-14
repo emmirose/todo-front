@@ -1,0 +1,8 @@
+<div class="task">
+  <button class="done">Done</button>
+  <h2>{{task.content}}</h2>
+    <label for="content">Update: </label>
+    <input id="content" [(ngModel)]="task.content">
+    <button class="submit" type="submit" (click)="updateTask(task)">Save</button>
+    <button class="delete" (click)="deleteTask(task)">Delete</button>
+</div>

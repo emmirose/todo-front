@@ -1,0 +1,34 @@
+h2 {
+  font-family: sans-serif;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.delete {
+  background-color: rgb(124, 0, 0);
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  color: white;
+}
+
+.submit {
+  background-color: rgb(0, 94, 38);
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  color: white;
+}
+
+.done {
+  background-color: rgb(94, 0, 94);
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  color: white;
+}
