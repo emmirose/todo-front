@@ -27,6 +27,5 @@ export class TodolistComponent {
   addTask(task: Task): void {
     console.log(task);
     this.todoService.addTask(task).subscribe();
-
   }
 }

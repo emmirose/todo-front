@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Task } from '../Task';
 import { TodoService } from '../todo.service';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-task',
@@ -13,7 +14,6 @@ export class TaskComponent {
   constructor(private todoService: TodoService) { }
 
   updateTask(task: Task): void {
-    console.log("je suis dans updateTask");
       this.todoService.updateTask(task).subscribe();
   }
 
@@ -21,4 +21,7 @@ export class TaskComponent {
       this.todoService.deleteTask(task).subscribe();
   }
 
+  updateIsDone(task: Task): void {
+    this.todoService.updateisDone(task, !task.isDone).subscribe();
+  }
 }

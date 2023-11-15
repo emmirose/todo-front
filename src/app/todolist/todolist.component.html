@@ -1,18 +1,16 @@
 <h1>Ma to-do</h1>
-
-<div class="tasks">
-  <div *ngFor="let task of tasks" class="task">
-    <app-task
-      [task]="task"
-      style="width: 100px"
-    ></app-task>
-  </div>
-  <div>
-    <label for="new-task">New task: </label>
+<div class="list">
+  <div class="new-task">
+    <label for="new-task">Nouvelle tâche: </label>
     <input id="new-task" #content />
-
-    <button type="button" class="add-button" (click)="addTask({content: content.value, isDone: false}); content.value=''">
-      Add task
-    </button>
+    <mat-icon class="add-task" fontIcon="send"(click)="addTask({content: content.value, isDone: false}); content.value=''"></mat-icon>
+  </div>
+  <div class="tasks">
+    <div *ngFor="let task of tasks" class="task">
+      <app-task
+        [task]="task"
+        style="width: 100px"
+      ></app-task>
+    </div>
   </div>
 </div>

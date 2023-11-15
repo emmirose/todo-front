@@ -26,9 +26,9 @@ export class TodoService {
     return this.http.put<Task>(url, task);
   }
 
-  updateisDone(task: Task): Observable<Task> {
+  updateisDone(task: Task, isDone: boolean): Observable<Task> {
     const url = `${this.url}/${task.id}`;
-    return this.http.put<Task>(url, task);
+    return this.http.patch<Task>(url, isDone);
   }
 
   deleteTask(task: Task): Observable<Task> {

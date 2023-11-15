@@ -1,34 +1,47 @@
-h2 {
-  font-family: sans-serif;
-}
 
 .task {
+  font-family: 'Indie Flower', cursive;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  border: 2px groove rgb(56, 1, 35);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+  height: fit-content;
+
+    .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .update-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    gap: 1rem;
+  }
+
+  .done {
+    background-color: rgb(94, 0, 94);
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    color: white;
+  }
+
+}
+input {
+  border: 1px solid rgb(243, 0, 142);
+  border-radius: 2px;
+  height: 1.5rem;
+  padding: 0.1rem;
 }
 
-.delete {
-  background-color: rgb(124, 0, 0);
-  height: 2rem;
-  border-radius: 50%;
-  border: none;
-  color: white;
-}
-
-.submit {
-  background-color: rgb(0, 94, 38);
-  height: 2rem;
-  border-radius: 50%;
-  border: none;
-  color: white;
-}
-
-.done {
-  background-color: rgb(94, 0, 94);
-  height: 2rem;
-  border-radius: 50%;
-  border: none;
-  color: white;
+mat-icon {
+  color:rgb(56, 1, 35);
 }

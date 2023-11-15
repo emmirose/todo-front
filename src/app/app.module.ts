@@ -7,6 +7,7 @@ import { TodolistComponent } from './todolist/todolist.component';
 import { TaskComponent } from './task/task.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -20,6 +21,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
